@@ -26,3 +26,10 @@ class ItemBiblioteca:
         if ano <= 0:
             raise ValueError("Ano deve ser maior que 0.")
         self.__ano = ano
+
+    def emprestar(self):
+        if self.__disponivel:
+            self.__disponivel = False
+            print(f"Item '{self.__titulo}' emprestado com sucesso!")
+        else:
+            print(f"Item '{self.__titulo}' já está emprestado.")
