@@ -18,3 +18,10 @@ class biblioteca:
                 return item
         return None
     
+    def emprestar_item(self, codigo):
+        item = self.buscar_por_codigo(codigo)
+        if item:
+            item.emprestar()
+        else:
+            print(f"Item com código {codigo} não encontrado.")
+    
