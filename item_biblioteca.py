@@ -33,3 +33,10 @@ class ItemBiblioteca:
             print(f"Item '{self.__titulo}' emprestado com sucesso!")
         else:
             print(f"Item '{self.__titulo}' já está emprestado.")
+    
+    def devolver(self):
+        if not self.__disponivel:
+            self.__disponivel = True
+            print(f"Item '{self.__titulo}' devolvido com sucesso!")
+        else:
+            print(f"Item '{self.__titulo}' já está disponível.")
