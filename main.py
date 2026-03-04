@@ -1,6 +1,6 @@
 from biblioteca import Biblioteca
 from livro import Livro
-from Revista import Revista
+from revista import Revista
 
 def menu():
     biblioteca = Biblioteca()

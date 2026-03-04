@@ -1,4 +1,4 @@
-class biblioteca:
+class Biblioteca:
     def __init__(self):
         self._itens = []
 
@@ -7,13 +7,13 @@ class biblioteca:
         print(f"item'{item.get_titulo()}' adicionado com sucesso !")
     
     def listar_itens(self):
-        if not self.__itens:
+        if not self._itens:
             print("Nenhum item cadastrado.")
-        for item in self.__itens:
+        for item in self._itens:
             item.exibir_detalhes()
     
     def buscar_por_codigo(self, codigo):
-        for item in self.__itens:
+        for item in self._itens:
             if item.get_codigo() == codigo:
                 return item
         return None
