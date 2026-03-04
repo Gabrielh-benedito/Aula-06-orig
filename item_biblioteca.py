@@ -7,3 +7,6 @@ class ItemBiblioteca:
     
     def get_codigo(self):
         return self.__codigo
+    
+    def get_titulo(self):
+        return self.__titulo
