@@ -4,4 +4,10 @@ class biblioteca:
 
     def adicionar_item(self, item):
         self._itens.append(item)
-        print(f"Item adicionado com sucesso")
+        print(f"item'{item.get_titulo()}' adicionado com sucesso !")
+    
+    def listar_itens(self):
+        if not self.__itens:
+            print("Nenhum item cadastrado.")
+        for item in self.__itens:
+            item.exibir_detalhes()
