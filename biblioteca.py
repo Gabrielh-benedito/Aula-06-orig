@@ -11,3 +11,10 @@ class biblioteca:
             print("Nenhum item cadastrado.")
         for item in self.__itens:
             item.exibir_detalhes()
+    
+    def buscar_por_codigo(self, codigo):
+        for item in self.__itens:
+            if item.get_codigo() == codigo:
+                return item
+        return None
+    
