@@ -40,3 +40,6 @@ class ItemBiblioteca:
             print(f"Item '{self.__titulo}' devolvido com sucesso!")
         else:
             print(f"Item '{self.__titulo}' já está disponível.")
+    
+    def exibir_detalhes(self):
+        print(f"Código: {self.__codigo} | Título: {self.__titulo} | Ano: {self.__ano}")
