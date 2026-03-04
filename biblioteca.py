@@ -25,3 +25,10 @@ class biblioteca:
         else:
             print(f"Item com código {codigo} não encontrado.")
     
+    def devolver_item(self, codigo):
+        item = self.buscar_por_codigo(codigo)
+        if item:
+            item.devolver()
+        else:
+            print(f"Item com código {codigo} não encontrado.")
+    
